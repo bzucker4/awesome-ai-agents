@@ -732,6 +732,29 @@ General purpose, Productivity
 </details>
 
 
+## [Blastgate](https://github.com/bzucker4/blastgate)
+Deterministic policy firewall and approval gate for AI agent tool calls
+
+<details>
+
+### Category
+Security, Guardrails, Developer tools
+
+### Description
+
+- **Policy before execution**: Checks every MCP tool call, shell command and Claude Code tool use against plain YAML rules before it runs.
+- **Built-in detectors**: Destructive SQL, `rm -rf` hidden in chained commands, path escapes (with symlink resolution) and non-allowlisted domains.
+- **Human in the loop**: Risky calls pause for approval in the terminal or via webhook; timeouts and errors fail closed.
+- **Runaway loop guard**: Caps identical calls and total call rate per minute.
+- **Signed audit log**: Every decision is written to a hash-chained, Ed25519-signed log you can verify.
+- **Deterministic and dependency-free**: No model in the decision path, zero runtime dependencies.
+
+### Links
+- [GitHub](https://github.com/bzucker4/blastgate)
+- [npm](https://www.npmjs.com/package/blastgate)
+
+</details>
+
 ## [Blinky](https://github.com/seahyinghang8/blinky)
 An open-source AI debugging agent for VSCode
 
